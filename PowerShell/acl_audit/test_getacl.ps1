@@ -1,7 +1,5 @@
-
-# Build & return full filepath to outfile
 function Build-Filename {
-	# Takes 2 args, the outfile's desired path & file name without extension
+	# Build & return full filepath to outfile
 	Param ([string]$filepath, [string]$filename)
 
 	# Create variable for outfile with full path, filename, & extension
@@ -10,16 +8,18 @@ function Build-Filename {
     return $BuiltFilename
 }
 
-# Create file and add headers
+
 function Prepare-Outfile {
+	# Create file and add headers
 	Param([string]$Header, [string]$OutFile)
 
 	# Set up file for populating with results
 	Add-Content -Value $Header -Path $OutFile
 }
 
-# Scan directory & subdirectories for ACLs, write to file
+
 function Scan-Folder {
+	# Scan directory & subdirectories for ACLs, write to file
 	Param([string]$RootPath, $OutFile)
 
 	# Create object of all folders in scan path
@@ -39,18 +39,39 @@ function Scan-Folder {
 }
 
 
-# Path to write file to
-$OutPath = "C:\Users\jxk5224\Desktop\"
-# Name of output file, without file extension
-$OutFilename = "test_file"
+function Map-Drive {
+	# Temporarily map scan folder if it is on network share
+	Param([string]$DriveLetter,
+		  [string]$RootPath,
+		  [string]$Username,
+		  [string]$passwd)
 
-# Build the filename
+	$net = new-object -comobject wscript.network
+	$net.mapnetworkdrive($DriveLetter, "$RootPath", $false, "rtlsvcs\$username", "$passwd")
+
+}
+
+
+function Unmap-Drive {
+	# Unmap drive at the end of script run
+	Param([string]$RootPath)
+}
+
+
+# $DriveLetter: Letter to temporarily map drive to
+# $OutPath: Path to write file to
+# $OutFileName: Name of output file, without file extension
+# $OutFile: Build filename & prepare to write to file
+# $Header: Create the file and add CSV headers
+# $RootPath: Path to run ops on
+$DriveLetter = "p:"
+$OutPath = "C:\Users\jxk5224\Desktop\"
+$OutFilename = "test_file"
 $OutFile = Build-Filename -filepath $OutPath -filename $OutFilename
-# Create file and add headers
 $Header = "Folder Path,IdentityReference,AccessControlType,IsInherited,InheritanceFlags,PropagationFlags"
 Prepare-Outfile -header $Header -outfile $OutFile
+$RootPath = "\\metrolx01\backup\jxk5224\access"
 
-# Run the scan & output results to file
-# Path to scan
-$RootPath = "z:\"
+
+Map-Drive -DriveLetter $DriveLetter -RootPath $RootPath -Username "jxk5224" -passwd "L3xusM3tro"
 Scan-Folder -rootpath $RootPath -outfile $OutFile
