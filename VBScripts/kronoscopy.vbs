@@ -19,15 +19,15 @@ Const OverwriteExisting = True
 LocalScrPath = objFSO.GetSpecialFolder(1) & "\"
 
 ' Copy Kronos icon to system32
-objFSO.Copyfile "\\metrolx01\backup\jxk5224\WebShortcuts\Everyone\kronos2.ico", LocalScrPath
+objFSO.Copyfile "\\metrolx01\backup\jxk5224\Access\WebShortcuts\Everyone\kronos2.ico", LocalScrPath
 
 boolOverwrite = False
 
 ' Copy Kronos shortcut to desktop
-objFSO.CopyFile "\\metrolx01\backup\jxk5224\WebShortcuts\Everyone\Kronos Cloud2.lnk", strPubDesktop, boolOverwrite
+objFSO.CopyFile "\\metrolx01\backup\jxk5224\Access\WebShortcuts\Everyone\Kronos Cloud2.lnk", strPubDesktop, boolOverwrite
 
 ' Run the append script to keep a record of who's clicked the shortcut
 Dim oShell
 Set oShell = Wscript.CreateObject("WScript.Shell")
-oShell.Run "\\metrolx01\backup\jxk5224\Scripts\VBScripts\Kronos-Shortcut\appendNameKronos.vbs"
+oShell.Run "\\metrolx01\backup\jxk5224\Access\Scripts\VBScripts\Kronos-Shortcut\appendNameKronos.vbs"
 Set oShell = Nothing

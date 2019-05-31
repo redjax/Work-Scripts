@@ -12,9 +12,9 @@ const overwrite = true ' Has to be here for some reason
 
 Dim strDirectory, strFile, strText, strUser
 ' Directory containing report text file
-strDirectory = "\\metrolx01\backup\jxk5224\scripts\vbscripts\Kronos-Shortcut"
+strDirectory = "\\metrolx01\backup\jxk5224\access\scripts\vbscripts\Kronos-Shortcut"
 ' Report text file
-strFile = "\kronosreport.txt"
+strFile = "\kronosreport2.txt"
 
 ' Create the File System Object
 Set objFSO = CreateObject("Scripting.FileSystemObject")
