@@ -1,3 +1,8 @@
+# Allow running on machines that have not allowed remote signed execution
+# Found here: https://stackoverflow.com/questions/29645/set-up-powershell-script-for-automatic-execution/8597794#8597794
+@PowerShell -ExecutionPolicy Bypass -Command Invoke-Expression $('$args=@(^&{$args} %*);'+[String]::Join(';',(Get-Content '%~f0') -notmatch '^^@PowerShell.*EOF$')) & goto :EOF
+
+
 function Build-Filename {
 	# Build & return full filepath to outfile
 	Param ([string]$filepath, [string]$filename)

@@ -43,8 +43,5 @@ End If
 ' %allusersprofile%\ADP\websuite
 If Not fso.FolderExists(appDataADPFolder) Then
     fso.CreateFolder(appDataADPFolder)
-End If
-
-If Not fso.FolderExists(appDataADPFolder & "\websuite") Then
     fso.CreateFolder(appDataADPFolder & "\websuite")
 End If
