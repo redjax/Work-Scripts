@@ -3,7 +3,7 @@
 @PowerShell -ExecutionPolicy Bypass -Command Invoke-Expression $('$args=@(^&{$args} %*);'+[String]::Join(';',(Get-Content '%~f0') -notmatch '^^@PowerShell.*EOF$')) & goto :EOF
 
 
-function Build-Filename {
+function Use-Filename {
 	# Build & return full filepath to outfile
 	Param ([string]$filepath, [string]$filename)
 
@@ -14,7 +14,7 @@ function Build-Filename {
 }
 
 
-function Prepare-Outfile {
+function Use-Outfile {
 	# Create file and add headers
 	Param([string]$Header, [string]$OutFile)
 
@@ -23,7 +23,7 @@ function Prepare-Outfile {
 }
 
 
-function Scan-Folder {
+function Get-Folder {
 	# Scan directory & subdirectories for ACLs, write to file
 	Param([string]$RootPath, $OutFile)
 
@@ -44,7 +44,7 @@ function Scan-Folder {
 }
 
 
-function Map-Drive {
+function Add-Drive {
 	# Temporarily map scan folder if it is on network share
 	Param([string]$DriveLetter,
 		  [string]$RootPath,
@@ -57,7 +57,7 @@ function Map-Drive {
 }
 
 
-function Unmap-Drive {
+function Remove-Drive {
 	# Unmap drive at the end of script run
 	Param([string]$RootPath)
 }
@@ -70,13 +70,13 @@ function Unmap-Drive {
 # $Header: Create the file and add CSV headers
 # $RootPath: Path to run ops on
 $DriveLetter = "p:"
-$OutPath = "C:\Users\jxk5224\Desktop\"
+$OutPath = ""
 $OutFilename = "test_file"
-$OutFile = Build-Filename -filepath $OutPath -filename $OutFilename
+$OutFile = Use-Filename -filepath $OutPath -filename $OutFilename
 $Header = "Folder Path,IdentityReference,AccessControlType,IsInherited,InheritanceFlags,PropagationFlags"
-Prepare-Outfile -header $Header -outfile $OutFile
-$RootPath = "\\metrolx01\backup\jxk5224\access"
+Use-Outfile -header $Header -outfile $OutFile
+$RootPath = ""
 
 
-Map-Drive -DriveLetter $DriveLetter -RootPath $RootPath -Username "jxk5224" -passwd "L3xusM3tro"
-Scan-Folder -rootpath $RootPath -outfile $OutFile
+Add-Drive -DriveLetter $DriveLetter -RootPath $RootPath -Username "" -passwd ""
+Get-Folder -rootpath $RootPath -outfile $OutFile

@@ -1,7 +1,7 @@
 @echo off
 SET user=""
-xcopy c:\users\%user% \\metrolx01\backup\%user%\local_drive\%user%\ /E /C /H /R /K /O /Y
-xcopy "c:\documents and settings\%user%\my documents" \\metrolx01\backup\%user%\local_drive\documents\ /D /E /C /H /R /K /O /Y
-xcopy "c:\documents and settings\%user%\desktop" \\metrolx01\backup\%user%\local_drive\desktop\ /D /E /C /H /R /K /O /Y
-xcopy "c:\documents and settings\%user%\links" \\metrolx01\backup\%user%\local_drive\links\ /D /E /C /H /R /K /O /Y
-xcopy "c:\documents and settings\%user%\favorites" \\metrolx01\backup\%user%\local_drive\favorites\ /D /E /C /H /R /K /O /Y
+xcopy c:\users\%user% <FILE_SERVER_PATH> /E /C /H /R /K /O /Y
+xcopy "c:\documents and settings\%user%\my documents" <FILE_SERVER_PATH> /D /E /C /H /R /K /O /Y
+xcopy "c:\documents and settings\%user%\desktop" <FILE_SERVER_PATH> /D /E /C /H /R /K /O /Y
+xcopy "c:\documents and settings\%user%\links" <FILE_SERVER_PATH> /D /E /C /H /R /K /O /Y
+xcopy "c:\documents and settings\%user%\favorites" <FILE_SERVER_PATH> /D /E /C /H /R /K /O /Y

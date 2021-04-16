@@ -14,14 +14,14 @@ strDesktop = objProcess.Item("UserProfile") & "\Desktop\"
 ' Delete the previous map and delete desktop shortcut
 Dim oShell
 Set oShell = Wscript.CreateObject("WScript.Shell")
-oShell.Run "\\metrolx01\backup\jxk5224\scripts\vbscripts\metvehinvunmap.vbs"
+oShell.Run ""
 Set oShell = Nothing
 
 ' Copy the shortcut to the Desktop
 boolOverwrite = False
-objFSO.CopyFile "\\metrolx01\backup\jxk5224\WebShortcuts\Sales\vehinv.lnk", strDesktop, boolOverwrite
+objFSO.CopyFile "", strDesktop, boolOverwrite
 
 ' Run the append script to keep a record of who's clicked the shortcut
 Set oShell = Wscript.CreateObject("WScript.Shell")
-oShell.Run "\\metrolx01\backup\jxk5224\scripts\vbscripts\appendNameMet.vbs"
+oShell.Run ""
 Set oShell = Nothing

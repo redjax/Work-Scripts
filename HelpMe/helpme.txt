@@ -1,7 +1,7 @@
-User: Jack
+User: 
 
-PC Name: MET-HHTMFB2
+PC Name: 
 
-IP Address: 172.28.2.14
+IP Address: 
 
-Phone Number: 2169166000
+Phone Number: 

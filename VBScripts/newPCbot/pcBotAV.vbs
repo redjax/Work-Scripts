@@ -12,7 +12,7 @@ Set shell = CreateObject("WScript.Shell")
 
 ' |VARIABLES|
 
-avPath = "\\A1CLE7P01\eXpress\Library\CoreApps\SEP"
+avPath = ""
 
 ' -------------------------------------------------------------------- '
 

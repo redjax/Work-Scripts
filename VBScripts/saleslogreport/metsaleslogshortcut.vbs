@@ -16,10 +16,10 @@ strDesktop = objProcess.Item("UserProfile") & "\Desktop\"
 
 boolOverwrite = False
 
-objFSO.CopyFile "\\metrolx01\mlx_carsales\saleslogs\MLX_Sales_Log.xlsx - Shortcut.lnk", strDesktop, boolOverwrite
+objFSO.CopyFile "", strDesktop, boolOverwrite
 
 ' Run the append script to keep a record of who's clicked the shortcut
 Dim oShell
 Set oShell = Wscript.CreateObject("WScript.Shell")
-oShell.Run "\\metrolx01\backup\jxk5224\scripts\vbscripts\saleslogreport\slappendNameMet.vbs"
+oShell.Run ""
 Set oShell = Nothing

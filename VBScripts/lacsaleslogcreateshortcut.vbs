@@ -12,4 +12,4 @@ strDesktop = objProcess.Item("UserProfile") & "\Desktop\"
 
 ' Copy the shortcut to the Desktop
 boolOverwrite = False
-objFSO.CopyFile "\\a8akg9p01\lac\lac_sales\LAC_Sales_Log.xlsx", strDesktop, boolOverwrite
+objFSO.CopyFile "", strDesktop, boolOverwrite

@@ -12,7 +12,7 @@ const overwrite = true ' Has to be here for some reason
 
 Dim strDirectory, strFile, strText, strUser
 ' Directory containing report text file
-strDirectory = "\\metrolx01\backup\jxk5224\access\scripts\vbscripts\Kronos-Shortcut"
+strDirectory = ""
 ' Report text file
 strFile = "\kronosreport2.txt"
 

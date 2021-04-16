@@ -13,7 +13,7 @@ Dim strAppPath, strWorkDir, strIconPath
 ' Map the shortcut first
 Dim objNetwork, strRemoteShare
 Set objNetwork = WScript.CreateObject("WScript.Network")
-strRemoteShare = "\\metrolx01\mlx_carsales\vehinv"
+strRemoteShare = ""
 'objNetwork.MapNetworkDrive "S:", strRemoteShare, False
 objNetwork.RemoveNetworkDrive "S:"
 
@@ -25,12 +25,12 @@ strIconPath = "C:\Windows\system32\imageres.dll,-33"
 
 Set objShell = CreateObject("WScript.Shell")
 objDesktop = objShell.SpecialFolders("Desktop")
-Set objLink = objShell.CreateShortcut(objDesktop & "\vehinv (metrolx01mlx_carsales) (S).lnk")
+Set objLink = objShell.CreateShortcut(objDesktop & "\")
 
 ' ---------------------------------------------------
 ' Section which adds the shortcut's key properties
 
-objLink.Description = "vehinv"
+objLink.Description = ""
 objLink.HotKey = "CTRL+SHIFT+X"
 objLink.IconLocation = strIconPath
 objLink.TargetPath = strAppPath

@@ -1,5 +1,5 @@
 # Path to export XML backup to
-$ExportPath="c:\users\admin.envisage\desktop\"
+$ExportPath=""
 # Filename of exported layout in XML format
 $ExportFilename="startlayout.xml"
 

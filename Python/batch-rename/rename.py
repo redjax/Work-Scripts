@@ -1,6 +1,6 @@
 import os
 
-directory = r'\\metrolx01\backup\dxo8216\MyDocuments\SPEEDING TICKETS LETTERS\2018\Speeding Tickets\HORVAL, GERALD - 1.31.18 - NEWBURGH  HTS'
+directory = r''
 find = "#"
 replace = ' '
 

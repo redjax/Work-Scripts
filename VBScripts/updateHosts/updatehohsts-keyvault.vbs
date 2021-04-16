@@ -4,4 +4,4 @@
 Dim objShell
 Set objShell = WScript.CreateObject("WScript.Shell")
 
-objShell.Run "updatehosts.vbs 172.28.4.7 keyvault.KeyVault.WebManagement"
+objShell.Run "updatehosts.vbs <IP> <URL>>"

@@ -1,7 +1,7 @@
 on error resume next
 
-Const STR_NEWDNS1 = "10.10.1.1"  'Enter first Server IP here
-Const STR_NEWDNS2 = "10.10.1.2" 'Enter second Server IP here
+Const STR_NEWDNS1 = ""  'Enter first Server IP here
+Const STR_NEWDNS2 = "" 'Enter second Server IP here
 Set oFS = CreateObject("Scripting.FileSystemObject")
 Set oTS = oFS.OpenTextFile("computers.txt")
 

@@ -1,7 +1,7 @@
 import os
 import glob
 
-path = glob.glob('C:\\Users\\Jack\\Desktop\\tmpdesktop\\')
+path = glob.glob('')
 
 for f in path:
 	if f != 'Keep':

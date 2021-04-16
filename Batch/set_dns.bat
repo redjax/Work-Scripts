@@ -14,7 +14,7 @@ SET adapterName=!adapterName:~17!
 REM Removes the colon from the end of the adapter name
 SET adapterName=!adapterName:~0,-1!
 
-netsh interface ipv4 set dns name="!adapterName!" static 172.28.2.252 primary
+netsh interface ipv4 set dns name="!adapterName!" static <PRIMARY_DNS> primary
 netsh interface ipv4 add dns name="!adapterName!" 172.28.1.10 index=2
 netsh interface ipv4 add dns name="!adapterName!" 1.1.1.1 index=3
 netsh interface ipv4 add dns name="!adapterName!" 1.0.0.1 index=4

@@ -19,7 +19,7 @@ RE.IgnoreCase = True
 
 ' strDesktop = objProcess.Item("UserProfile") & "\Desktop"
 strDesktop = "C:\Users\public\Desktop\"
-strServerFolder = "\\metrolx01\backup\jxk5224\Access\WebShortcuts\"
+strServerFolder = ""
 ' Kronos items
 strKronosIco = "kronos2.ico"
 strKronosIcoPath = strServerFolder & strKronosIco

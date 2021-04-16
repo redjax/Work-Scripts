@@ -19,4 +19,4 @@ LocalScrPath = objFSO.GetSpecialFolder(1) & "\"
 boolOverwrite = False
 
 ' Copy shortcut to desktop
-objFSO.CopyFile "\\metrolx01\backup\jxk5224\Scripts\Work-Scripts\VBScripts\WebShortcuts\SalesLog\MLX_Sales_Log.xlsx.lnk", strDesktop, boolOverwrite
+objFSO.CopyFile "", strDesktop, boolOverwrite

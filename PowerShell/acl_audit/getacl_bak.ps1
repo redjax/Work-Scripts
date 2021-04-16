@@ -1,9 +1,9 @@
 # Path to output file (CSV)
-$OutFile = "C:\users\jxk5224\desktop\mlx_backup_Permissions.csv"
+$OutFile = ""
 # Header row items
 $Header = "Folder Path,IdentityReference,AccessControlType,IsInherited,InheritanceFlags,PropagationFlags"
 # If there's a previous $Outfile, delete it
-Del $OutFile
+Remove-Item $OutFile
 # Set up file for populating with results
 Add-Content -Value $Header -Path $OutFile
 
@@ -11,7 +11,7 @@ Add-Content -Value $Header -Path $OutFile
 $RootPath = "z:\"
 
 # Create object of all folders in scan path
-$Folders = dir $RootPath -recurse | where {$_.psiscontainer -eq $true}
+$Folders = Get-ChildItem $RootPath -recurse | Where-Object {$_.psiscontainer -eq $true}
 
 # Loop over folders
 foreach ($Folder in $Folders){

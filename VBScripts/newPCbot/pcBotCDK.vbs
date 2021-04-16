@@ -10,8 +10,8 @@ Set shell = CreateObject("WScript.Shell")
 ' -------------------------------------------------------------------- '
 
 ' |VARIABLES|
-mlxCdk = ("\\metrolx01\backup\jxk5224\_New PC Setup\" & "\CDK Drive installer_270")
-adminDesktop = "C:\Users\AAGAdmin\Desktop\"
+mlxCdk = ("" & "\")
+adminDesktop = ""
 
 ' -------------------------------------------------------------------- '
 
@@ -19,4 +19,4 @@ adminDesktop = "C:\Users\AAGAdmin\Desktop\"
 fso.CopyFolder mlxCdk, adminDesktop
 
 ' Launch the installer
-shell.run(adminDesktop & "\CDK Drive installer_270\StartHta.exe")
+shell.run(adminDesktop & "\")

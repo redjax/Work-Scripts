@@ -18,9 +18,9 @@ LocalScrPath = objFSO.GetSpecialFolder(1) & "\"
 
 ' Copy UC Suite shortcut to the desktop
 boolOverwrite = False
-objFSO.Copyfile "UC Suite.lnk", strDesktop, boolOverwrite
+objFSO.Copyfile "", strDesktop, boolOverwrite
 
 Dim oShell
 Set oShell = Wscript.CreateObject("WScript.Shell")
-oShell.Run "\\metrolx01\backup\jxk5224\scripts\work-scripts\vbscripts\webshortcuts\ucsuite\ucsuiteappendname.vbs"
+oShell.Run ""
 Set oShell = Nothing

@@ -12,20 +12,20 @@ Set shell = CreateObject("WScript.Shell")
 ' |VARIABLES|
 
 ' Admin Desktop
-adminDesktop = "C:\Users\AAGAdmin\Desktop"
+adminDesktop = ""
 ' Altiris folder on Admin Desktop
-altirisFolder = adminDesktop & "\Altiris"
+altirisFolder = adminDesktop & ""
 
 ' Altiris stuff
-altirisInstaller = "\\metrolx01\backup\jxk5224\_New PC Setup\Altiris Client.lnk"
+altirisInstaller = ""
 ' Altiris setup instructions
-altirisInstructions = "\\metrolx01\backup\jxk5224\_New PC Setup\New PC Setup Altiris Instrusctions.txt"
+altirisInstructions = ""
 
 ' -------------------------------------------------------------------- '
 
-fso.CreateFolder(adminDesktop & "\Altiris") ' Create folder called "Altiris" on admin desktop
+fso.CreateFolder(adminDesktop & "\") ' Create folder called "Altiris" on admin desktop
 
 fso.CopyFile (altirisInstaller), altirisFolder ' Copy Altiris installer
 fso.CopyFile (altirisInstructions), altirisFolder ' Copy Altiris instructions
 
-shell.run(altirisFolder & "\Altiris Client.lnk")
+shell.run(altirisFolder & "\.lnk")

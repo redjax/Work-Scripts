@@ -12,14 +12,14 @@ Set shell = CreateObject("WScript.Shell")
 ' |VARIABLES|
 
 ' Office folder on the server
-officeFolder = "\\metrolx01\backup\jxk5224\_Programs & Fixes\Office"
+officeFolder = ""
 
 ' Admin Desktop
-adminDesktop = "C:\Users\AAGAdmin\Desktop"
-adminOffice = adminDesktop & "\Office 2010"
+adminDesktop = ""
+adminOffice = adminDesktop & "\"
 
 ' -------------------------------------------------------------------- '
 
 ' Copy Office2010 folder to the admin desktop
-fso.CopyFolder (officeFolder & "\Office 2010"), adminDesktop
-shell.run(adminOffice & "\setup.exe")
+fso.CopyFolder (officeFolder & "\"), adminDesktop
+shell.run(adminOffice & "\")

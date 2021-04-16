@@ -53,4 +53,4 @@ shell.run(pcBotOffice.vbs)
 ' STEP 6: Printer Installation
 '    >a message box will remind you to set up printers.
 MsgBox "A text document with a list of printers for both stores will pop up next. Choose the printer(s) to set up, copy their IP address, and either run through the printer setup wizard, or (for Toshiba MFPs), use Windows Explorer to navigate to the printer, and run the Setup.exe inside the UNIV_driver folder."
-shell.run("\\METROLX01\backup\jxk5224\Guides\For Admins\Printer List.txt")
+shell.run("")

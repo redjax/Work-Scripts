@@ -12,20 +12,20 @@ Set shell = CreateObject("WScript.Shell")
 ' |VARIABLES|
 
 'Public Desktop
-pubDesktop = "C:\Users\Public\Desktop"
+pubDesktop = ""
 ' Metrolx01 path
-mlxPath = "\\metrolx01\backup\jxk5224"
+mlxPath = ""
 ' Web Shortcuts folder
-mlxWebShortcuts = (mxlPath & "\WebShortcuts")
+mlxWebShortcuts = (mxlPath & "\")
 ' Admin Desktop
-adminDesktop = "C:\Users\AAGAdmin\Desktop"
+adminDesktop = ""
 ' Altiris folder on Admin Desktop
-altirisFolder = adminDesktop & "\Altiris"
+altirisFolder = adminDesktop & "\"
 
 ' Altiris stuff
-altirisInstaller = "\\metrolx01\backup\jxk5224\_New PC Setup\Altiris Client.lnk"
+altirisInstaller = ""
 ' Altiris setup instructions
-altirisInstructions = "\\metrolx01\backup\jxk5224\_New PC Setup\New PC Setup Altiris Instrusctions.txt"
+altirisInstructions = ""
 
 ' -------------------------------------------------------------------- '
 

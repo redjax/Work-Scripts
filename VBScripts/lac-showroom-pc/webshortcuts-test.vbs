@@ -10,11 +10,11 @@ Dim strAppPath, strWorkDir, strIconPath, strUrlPath
 
 strWorkDir ="C:\windows"
 strAppPath = "C:\Program Files (x86)\Internet Explorer\iexplore.exe"
-strUrlPath = "dealerdaily.lexus.com"
-strIconPath = "\\metrolx01\backup\jxk5224\WebShortcuts\akronshow\Icons\dealerDailyLogo.png"
+strUrlPath = ""
+strIconPath = ""
 Set objShell = CreateObject("WScript.Shell")
 objDesktop = objShell.SpecialFolders("Desktop" & "\test")
-Set objLink = objShell.CreateShortcut(objDesktop & "\Dealer Daily - Test.lnk")
+Set objLink = objShell.CreateShortcut(objDesktop & "\.lnk")
 
 ' ---------------------------------------------------
 ' Section which adds the shortcut's key properties

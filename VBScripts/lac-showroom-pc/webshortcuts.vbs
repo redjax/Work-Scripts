@@ -26,8 +26,8 @@ strIconPath = "" ' Path to icon file
 Dim dealerDailyDesc, dealerDailyicon, dealerDailyTar, WshShell
 
 ' Dealer Daily
-dealerDailyDesc = "Dealer Daily"
-dealerDailyicon = "\\metrolx01\backup\jxk5224\WebShortcuts\akronshow\Icons\dealerDailyLogo.png"
+dealerDailyDesc = ""
+dealerDailyicon = ""
 dealerDailyTar = iePath
 
 ' --------------------------------------------------
@@ -61,9 +61,9 @@ strDesktop = objProcess.Item("UserProfile") & "\Desktop\"
 ' LocalScrPath = objFSO.GetSpecialFolder(1) & "\"
 
 ' ' Copy Kronos icon to system32
-' objFSO.Copyfile "\\metrolx01\backup\jxk5224\WebShortcuts\kronos2.ico", LocalScrPath
+' objFSO.Copyfile "", LocalScrPath
 
 ' boolOverwrite = False
 
 ' ' Copy Kronos shortcut to desktop
-' objFSO.CopyFile "\\metrolx01\backup\jxk5224\WebShortcuts\Kronos Cloud2.lnk", strDesktop, boolOverwrite
+' objFSO.CopyFile "", strDesktop, boolOverwrite

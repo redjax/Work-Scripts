@@ -9,7 +9,7 @@ Set objFSO = CreateObject("Scripting.FileSystemObject")
 Set objShell = CreateObject("WScript.Shell")
 Set objProcess = objShell.Environment("Process")
 
-strEveryone = "\\metrolx01\backup\jxk5224\webshortcuts\everyone"
+strEveryone = ""
 
 ' --------------------------------------------------
 

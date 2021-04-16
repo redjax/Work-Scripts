@@ -10,7 +10,7 @@ Dim strAppPath, strWorkDir, strIconPath
 ' Unmap the shortcut
 Dim objNetwork, strRemoteShare
 Set objNetwork = WScript.CreateObject("WScript.Network")
-strRemoteShare = "\\a8akg9p01\lac\lac_sales\vehinv"
+strRemoteShare = ""
 objNetwork.RemoveNetworkDrive "S:"
 
 WScript.Quit

@@ -8,10 +8,10 @@ strSystemRoot = objShell.ExpandEnvironmentStrings("%systemroot%")
 strHostsFile = strSystemRoot & "\system32\drivers\etc\hosts"
 
 ' Add an entry to the hosts file
-AddHostAlias strHostsFile, "testHost", "127.3.1.1"
+AddHostAlias strHostsFile, "<HOST>", "<IP>"
 
 ' Delete an entry in the hosts file specifying IP address
-DelHostEntry strHostsFile, "128.5.1.3"
+DelHostEntry strHostsFile, "<IP>>"
 
 ' Delete an entry in the hosts file specifying host name
 DelHostAlias strHostsFile, "MYNEW.HOST.COM"

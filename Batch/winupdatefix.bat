@@ -107,7 +107,7 @@ regsvr32 vbscript.dll /s
 regsvr32 scrrun.dll mstinit.exe /setup /s
 regsvr32 msnsspc.dll /SspcCreateSspiReg /s
 regsvr32 msapsspc.dll /SspcCreateSspiReg /s
-proxycfg �d
+proxycfg -d
 sc sdset wuauserv
 D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;
 
