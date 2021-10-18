@@ -1,0 +1,1 @@
+"c:\program files\malwarebytes\anti-malware\unins000.exe" /verysilent /suppressmsgboxes /norestart
