@@ -5,8 +5,9 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
      Start-Process -FilePath PowerShell.exe -Verb Runas -ArgumentList $CommandLine
      Exit
     }
-   }
+}
 
+# Array with apps to remove. Uncomment to have the script uninstall the app
 $apps=@(     
     "9E2F88E3.Twitter" #Twitter
     "ClearChannelRadioDigital.iHeartRadio" #iHeartRadio

@@ -69,7 +69,7 @@ function Remove-Drive {
 # $OutFile: Build filename & prepare to write to file
 # $Header: Create the file and add CSV headers
 # $RootPath: Path to run ops on
-$DriveLetter = "p:"
+$DriveLetter = ""
 $OutPath = ""
 $OutFilename = "test_file"
 $OutFile = Use-Filename -filepath $OutPath -filename $OutFilename

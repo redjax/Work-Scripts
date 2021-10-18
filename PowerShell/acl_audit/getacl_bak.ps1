@@ -8,7 +8,7 @@ Remove-Item $OutFile
 Add-Content -Value $Header -Path $OutFile
 
 # Path to scan.
-$RootPath = "z:\"
+$RootPath = ""
 
 # Create object of all folders in scan path
 $Folders = Get-ChildItem $RootPath -recurse | Where-Object {$_.psiscontainer -eq $true}
