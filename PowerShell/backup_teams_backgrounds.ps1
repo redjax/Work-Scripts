@@ -1,7 +1,7 @@
 $USR = $env:UserName
 $USR_PATH = "C:\Users\" + $USR
 $TEAMS_BACKGROUND_PATH = $USR_PATH + "\AppData\Roaming\Microsoft\Teams\Backgrounds\Uploads"
-$BACKUP_PATH = $USR_PATH + "\OneDrive - Embrace Pet Insurance\Documents\_backup\teams_backgrounds"
+$BACKUP_PATH = $USR_PATH + "\path\to\backup\teams_backgrounds"
 
 $BACKUP_FILES = Get-ChildItem -Path $TEAMS_BACKGROUND_PATH
 $RESTORE_FILES = Get-ChildItem -Path $BACKUP_PATH

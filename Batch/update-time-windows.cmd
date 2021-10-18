@@ -7,4 +7,4 @@ w32tm /register
 
 sc start W32Time
 
-w32tm /config /update /manualpeerlist:"pool.ntp.org"
+w32tm /config /update /manualpeerlist:"time.windows.com,pool.ntp.org"

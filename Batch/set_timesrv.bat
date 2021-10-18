@@ -4,7 +4,7 @@ net stop w32time
  
 
 rem Manually setting list of time servers. Setting to EPIDC1 and time.windows.com.
-w32tm /config /syncfromflags:manual /manualpeerlist:"garfield.embrace.local,time.windows.com"
+w32tm /config /syncfromflags:manual /manualpeerlist:"time.server.example,time.windows.com"
 
  
 
