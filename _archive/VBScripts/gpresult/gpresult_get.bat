@@ -1,1 +1,0 @@
-gpresult /h gpreport.html
