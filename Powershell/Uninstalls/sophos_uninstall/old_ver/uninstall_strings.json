@@ -1,0 +1,58 @@
+[
+    {
+        "32": [
+            {
+                "name": "Sophos AMSI Protection",
+                "uninstall_string": "{0EA5323F-DE1B-480C-911E-7827E5EA20E9}"
+            },
+            {
+                "name": "Sophos Endpoint Agent",
+                "uninstall_string": "{258F3C41-B03D-478A-8972-50F14E02841E}"
+            },
+            {
+                "name": "Sophos Endpoint Firewall",
+                "uninstall_string": "{2831282D-8519-4910-B339-2302840ABEF3}"
+            },
+            {
+                "name": "Sophos Technical Support",
+                "uninstall_string": "{2D2A1891-4657-4E6F-9373-BFCE4C9AC5BA}"
+            },
+            {
+                "name": "Sophos Technical Support",
+                "uninstall_string": "{4EFCDD15-24A2-4D89-84A4-857D1BF68FA8}"
+            },
+            {
+                "name": "Sophos Diagnostic Utility",
+                "uninstall_string": "{8078549C-CFF0-48C5-9B77-6BA48A14673D}"
+            },
+            {
+                "name": "Sophos Exploit Prevention",
+                "uninstall_string": "{866151B2-E14E-40E0-B6D9-64B1D428F5CB}"
+            },
+            {
+                "name": "Sophos File Scanner",
+                "uninstall_string": "{CD39E739-F480-4AC4-B0C9-68CA731D8AC6}"
+            }
+        ]
+    },
+    {
+        "64": [
+            {
+                "name": "Sophos Technical Support",
+                "uninstall_string": "{2C14E1A2-C4EB-466E-8374-81286D723D3A}"
+            },
+            {
+                "name": "Sophos Health",
+                "uninstall_string": "{5E8436D5-3688-4007-94C7-55D017275F89}"
+            },
+            {
+                "name": "HelpLink",
+                "uninstall_string": "{63B5D739-DD51-417D-AA8C-9B12A5DBF095}"
+            },
+            {
+                "name": "Comments",
+                "uninstall_string": "{FA203C29-393F-4247-A69D-6C93E6D685EB}"
+            }
+        ]
+    }
+]
