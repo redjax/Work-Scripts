@@ -13,15 +13,15 @@
 
 **Single machine**
 
-![disable_tamper_protection](old_ver/img/disable_tamper_protection.png)
+![disable_tamper_protection](img/disable_tamper_protection.png)
 
 **Multi-machine**
 
-![disable_tamper_protection_multi](old_ver/img/disable_tamper_protection_multi_endpoint.png)
+![disable_tamper_protection_multi](img/disable_tamper_protection_multi_endpoint.png)
 
 **Entire tenant/organization**
 
-![disable_tamper_protection_org](old_ver/img/disable_tamper_protection_org.png)
+![disable_tamper_protection_org](img/disable_tamper_protection_org.png)
 
 2. Open an elevated `Powershell` window
 3. Run `sophos_run_cli_unins.ps1`
