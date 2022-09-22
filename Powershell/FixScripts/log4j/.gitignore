@@ -1,0 +1,7 @@
+*.jar
+*.old
+*.tmp
+*.bak
+*.csv
+
+!**/*.example
