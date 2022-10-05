@@ -1,6 +1,7 @@
 backup/
 
 **/*.csv
+**/*.bak
 
 !**/*.example
 !**/example_*
